@@ -9,12 +9,15 @@
 
 (define (check-palin ls1 ls2)
 (cond ((null? ls1)'true)
+
+;;Checks if the word is Palindrome and returns true or false
 ((equal? (car ls1) (car ls2)) (check-palin (cdr ls1) (cdr ls2)))
 (else 'false)))
 
 ;;Calls Function and prints results
 (display (palin '(j o s h s o j)))
 (newline)
+
 
 
 
